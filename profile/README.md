@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="profile/banner.svg" alt="OXM Tech" width="100%">
+  <img src="banner.svg" alt="OXM Tech" width="100%">
 </p>
 
 ## Qué hacemos
