@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="bt bd">
+<title id="bt">Banner OXM Tech</title>
+<desc id="bd">Fondo navy con rejilla y circuitos animados. Chip central con la etiqueta AI. A la izquierda, nombre de la empresa, descripción y etiquetas.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#03466B"/>
+<stop offset="1" stop-color="#001A2B"/>
+</linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#006CA3" stop-opacity="0.55"/>
+<stop offset="1" stop-color="#006CA3" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#85B7EB" stop-opacity="0"/>
+<stop offset="0.5" stop-color="#85B7EB" stop-opacity="0.18"/>
+<stop offset="1" stop-color="#85B7EB" stop-opacity="0"/>
+</linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+<path d="M40 0H0V40" fill="none" stroke="#85B7EB" stroke-opacity="0.08" stroke-width="1"/>
+</pattern>
+<filter id="glowf" x="-50%" y="-50%" width="200%" height="200%">
+<feGaussianBlur stdDeviation="2.5" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+
+<rect width="1200" height="300" fill="url(#bg)"/>
+<rect width="1200" height="300" fill="url(#grid)"/>
+<circle cx="950" cy="150" r="170" fill="url(#glow)">
+<animate attributeName="r" values="150;185;150" dur="5s" repeatCount="indefinite"/>
+</circle>
+<rect x="-240" y="0" width="240" height="300" fill="url(#sweep)">
+<animate attributeName="x" values="-240;1200" dur="10s" repeatCount="indefinite"/>
+</rect>
+
+<!-- Circuitos base (tenues) -->
+<g fill="none" stroke="#85B7EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.22">
+<path d="M890 110 H840 L810 80 H650"/>
+<path d="M890 190 H840 L810 220 H650"/>
+<path d="M940 90 V40 H760 L740 20 H650"/>
+<path d="M1000 90 V50 H1080 L1100 30 V0"/>
+<path d="M1010 130 H1120 L1140 150 H1200"/>
+<path d="M1010 170 H1080 L1100 190 H1200"/>
+<path d="M1010 210 V240 H1050 L1070 260 V300"/>
+<path d="M930 210 V275 H880 L860 295 H650"/>
+<path d="M862 120 H890 M862 150 H890 M862 180 H890 M1010 150 H1040"/>
+</g>
+
+<!-- Pulsos -->
+<g fill="none" stroke="#B5D4F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowf)">
+<path d="M890 110 H840 L810 80 H650" stroke-dasharray="60 1000" stroke-dashoffset="60"><animate attributeName="stroke-dashoffset" values="60;-1000" dur="5s" repeatCount="indefinite"/></path>
+<path d="M890 190 H840 L810 220 H650" stroke-dasharray="60 1000" stroke-dashoffset="60"><animate attributeName="stroke-dashoffset" values="60;-1000" begin="1.2s" dur="6s" repeatCount="indefinite"/></path>
+<path d="M940 90 V40 H760 L740 20 H650" stroke-dasharray="60 1000" stroke-dashoffset="60"><animate attributeName="stroke-dashoffset" values="60;-1000" begin="0.6s" dur="4s" repeatCount="indefinite"/></path>
+<path d="M1010 130 H1120 L1140 150 H1200" stroke-dasharray="60 1000" stroke-dashoffset="60"><animate attributeName="stroke-dashoffset" values="60;-1000" begin="2s" dur="5s" repeatCount="indefinite"/></path>
+<path d="M1010 210 V240 H1050 L1070 260 V300" stroke-dasharray="60 1000" stroke-dashoffset="60"><animate attributeName="stroke-dashoffset" values="60;-1000" begin="3s" dur="6s" repeatCount="indefinite"/></path>
+<path d="M930 210 V275 H880 L860 295 H650" stroke-dasharray="60 1000" stroke-dashoffset="60"><animate attributeName="stroke-dashoffset" values="60;-1000" begin="1.8s" dur="5s" repeatCount="indefinite"/></path>
+</g>
+
+<!-- Puntos viajeros -->
+<g fill="#FFFFFF">
+<circle r="3"><animateMotion dur="5s" repeatCount="indefinite" path="M890 110 H840 L810 80 H650"/></circle>
+<circle r="3"><animateMotion dur="6s" begin="1.2s" repeatCount="indefinite" path="M890 190 H840 L810 220 H650"/></circle>
+<circle r="3"><animateMotion dur="4s" begin="0.6s" repeatCount="indefinite" path="M940 90 V40 H760 L740 20 H650"/></circle>
+<circle r="3"><animateMotion dur="5s" begin="2s" repeatCount="indefinite" path="M1010 130 H1120 L1140 150 H1200"/></circle>
+<circle r="3"><animateMotion dur="6s" begin="3s" repeatCount="indefinite" path="M1010 210 V240 H1050 L1070 260 V300"/></circle>
+<circle r="3"><animateMotion dur="5s" begin="1.8s" repeatCount="indefinite" path="M930 210 V275 H880 L860 295 H650"/></circle>
+</g>
+
+<!-- Nodos en los extremos -->
+<g fill="#006CA3" stroke="#85B7EB" stroke-width="2">
+<circle cx="650" cy="80" r="3"/>
+<circle cx="650" cy="220" r="3"/>
+<circle cx="650" cy="20" r="3"/>
+<circle cx="1100" cy="0" r="3"/>
+<circle cx="1200" cy="150" r="3"/>
+<circle cx="1200" cy="190" r="3"/>
+<circle cx="1070" cy="300" r="3"/>
+<circle cx="650" cy="295" r="3"/>
+</g>
+
+<!-- Chip AI -->
+<rect x="890" y="90" width="120" height="120" rx="14" fill="#03466B" stroke="#85B7EB" stroke-width="1.5" stroke-opacity="0.7"/>
+<rect x="920" y="120" width="60" height="60" rx="8" fill="#006CA3" fill-opacity="0.35" stroke="#85B7EB" stroke-width="1.5">
+<animate attributeName="fill-opacity" values="0.25;0.7;0.25" dur="5s" repeatCount="indefinite"/>
+</rect>
+<text x="950" y="151" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="28" font-weight="700" fill="#FFFFFF">AI</text>
+
+<!-- Texto a la izquierda -->
+<text x="60" y="125" font-family="Arial, Helvetica, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="64" font-weight="700" fill="#FFFFFF">OXM <tspan font-weight="400" fill="#85B7EB">Tech</tspan></text>
+<rect x="60" y="145" width="64" height="5" rx="2" fill="#006CA3"/>
+<text x="60" y="185" font-family="Arial, Helvetica, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="22" fill="#B5D4F4">AI Integrator con capacidades de ciberseguridad</text>
+
+<g font-family="Arial, Helvetica, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" fill="#FFFFFF" text-anchor="middle">
+<rect x="60" y="212" width="104" height="34" rx="17" fill="#006CA3" fill-opacity="0.35" stroke="#85B7EB" stroke-width="1"/>
+<text x="112" y="234">NVIDIA</text>
+<rect x="176" y="212" width="150" height="34" rx="17" fill="#006CA3" fill-opacity="0.35" stroke="#85B7EB" stroke-width="1"/>
+<text x="251" y="234">Google Cloud</text>
+<rect x="338" y="212" width="168" height="34" rx="17" fill="#006CA3" fill-opacity="0.35" stroke="#85B7EB" stroke-width="1"/>
+<text x="422" y="234">Ciberseguridad</text>
+</g>
+</svg>
